@@ -49,12 +49,9 @@ class Song
   end
   
   def self.find_or_create_by_name(song)
-    if @@all.include?(song)
-      find_by_name(song)
-    else
-    create(song)
+    find_by_name(song) || create(song)
   end
-end
+
   
 end
   
