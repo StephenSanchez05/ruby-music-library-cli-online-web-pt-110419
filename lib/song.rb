@@ -52,6 +52,7 @@ class Song
     unless @@all.include?(song)
     self.create(song)
   end
+end
   
 end
   
