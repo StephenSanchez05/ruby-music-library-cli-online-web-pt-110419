@@ -6,6 +6,10 @@ module Findable
     song
   end
   
+   def save
+    @@all << self 
+  end
+  
   def self.find_by_name(name)
     @@all.detect { |titles| titles.name == name }
   end
