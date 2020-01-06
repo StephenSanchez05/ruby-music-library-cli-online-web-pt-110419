@@ -1,6 +1,6 @@
 class Artist
   
-  include Concerns::Findable
+  extend Concerns::Findable
   
   @@all = []
   
