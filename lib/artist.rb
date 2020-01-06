@@ -45,8 +45,7 @@ class Artist
   end 
   
   def genres 
-    songs.uniq do |song|
-      song.genre.uniq
+    songs.uniq { |title| title.genre }
     end
   end
   
