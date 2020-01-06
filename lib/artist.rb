@@ -1,6 +1,8 @@
-require_relative "./init.rb"
+require_relative "./lib/concerns.rb"
 
 class Artist
+  
+  include Concerns::Findable
   
   @@all = []
   
