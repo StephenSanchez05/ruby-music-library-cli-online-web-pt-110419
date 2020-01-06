@@ -32,5 +32,12 @@ class Genre
   def self.destroy_all
     @@all.clear
   end
+  
+  def songs
+  
+  def artists 
+    songs.map { |title| title.artist }.uniq
+  end
+  
 end
   
