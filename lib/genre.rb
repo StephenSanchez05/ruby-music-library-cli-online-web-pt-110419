@@ -1,5 +1,3 @@
-require_relative "./init.rb"
-
 class Genre 
   
   @@all = []
