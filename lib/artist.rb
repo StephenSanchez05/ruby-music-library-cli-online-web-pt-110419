@@ -47,7 +47,6 @@ class Artist
   def genres 
     songs.uniq { |title| title.genre }
     end
-  end
   
 end
   
