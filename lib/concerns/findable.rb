@@ -1,14 +1,4 @@
-module Findable
-  
-  def self.create(name)
-    song = new(name)
-    song.save
-    song
-  end
-  
-   def save
-    all << self 
-  end
+module Concerns::Findable
   
   def self.find_by_name(name)
     all.detect { |titles| titles.name == name }
