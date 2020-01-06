@@ -1,5 +1,3 @@
-require_relative "./lib/concerns.rb"
-
 class Artist
   
   include Concerns::Findable
