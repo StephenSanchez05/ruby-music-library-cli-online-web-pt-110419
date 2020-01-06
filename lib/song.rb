@@ -48,5 +48,10 @@ class Song
     @@all.detect { |titles| titles.name == name }
   end
   
+  def self.find_or_create_by_name(song)
+    unless @@all.include?(song)
+    self.create(song)
+  end
+  
 end
   
