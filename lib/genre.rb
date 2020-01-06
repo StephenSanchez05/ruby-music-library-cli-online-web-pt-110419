@@ -33,12 +33,10 @@ class Genre
     @@all.clear
   end
   
-  def songs
-   Song.all.select { |title| title.genre == self }
-  end
+
   
   def artists 
-    songs.map { |title| title.artist }.uniq
+    songs.collect { |title| title.artist }.uniq
   end
   
 end
